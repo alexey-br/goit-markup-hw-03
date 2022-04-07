@@ -9,7 +9,7 @@ body {
     font-family: Roboto, Verdana, Tahoma, sans-serif;
     color: var(--color-main-text);
 }
-ul,h2,p {
+ul,h1,h2,h3,p {
     padding: 0;
     margin: 0;
 }
@@ -120,15 +120,16 @@ ul,h2,p {
 }
 /* ----------- герой ------------ */
 .hero {
+    text-align: center;
+    padding: 200px 0;
     background-color: var(--color-background);
-    padding-top: 200px;
+    
 }
 .hero-text {
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-third-text);
@@ -144,19 +145,29 @@ ul,h2,p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin: 0 auto 200px;
 }
 /* ----------- особенности ------------ */
+.features .title {
+    display: none;
+}
+.features-list {
+    display: flex;
+    padding: 94px 0;
+}
 .features-item {
     list-style-type: none;
+    width: calc((100%-90)/4);
+}
+.features-item:not(:last-child) {
+    margin-right: 30px;
 }
 .features-item-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase; 
-    color: var(--color-main-text);
+    text-transform: uppercase;
+    margin-bottom: 10px; 
 }
 .features-item-text {
     font-size: 14px;
@@ -167,6 +178,7 @@ ul,h2,p {
 /* ----------- чем мы занимаемся ------- */
 .we-do-title,
 .team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -175,23 +187,43 @@ ul,h2,p {
     color: var(--color-main-text);
 }
 .we-do-list {
-    list-style: none;
+    display: flex;
+    padding-bottom: 94px;
+    list-style-type: none;
+}
+.we-do-item:not(:last-child) {
+    margin-right: 30px;
+}
+.we-do-item img {
+    display: block;
 }
 /* ------------ наша команда ------------ */
 .team {
     background: #F5F4FA;
-    padding-top: 94px;
+    padding: 94px 0;
+}
+.team-list {
+    display: flex;
 }
 .team-member {
     list-style-type: none;
     width: 270px;
-    height: 368px;
+    padding-bottom: 30px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin: 10px 10px;
+}
+.team-member:not(:last-child) {
+    margin-right: 30px;
+}
+.team-member img {
+    display: block;
+    margin-bottom: 30px;
+}
+.team-member-name{
+    margin-bottom: 10px;
 }
 .team-member-name,
 .team-member-position {
@@ -200,7 +232,6 @@ ul,h2,p {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--color-main-text);
 }
 .team-member-position {
   font-weight: 400;
@@ -283,7 +314,6 @@ ul,h2,p {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--color-sec-text);
-    /* margin: 4px 24px 20px 24px; */
 }
 
 
