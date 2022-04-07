@@ -27,6 +27,19 @@ ul,h1,h2,h3,p {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* ------------- секция заголовка ------------- */
 .header {
     border-bottom: 1px solid #ECECEC; 
@@ -135,7 +148,9 @@ ul,h1,h2,h3,p {
     color: var(--color-third-text);
 }
 .hero-button {
-    font: 700 16px Roboto,sans-serif;
+    font-family: inherit;;
+    font-size: 16px;
+    font-weight: 700;
     color: var(--color-third-text);
     line-height: 1.87;
     letter-spacing: 0.06em;
@@ -147,9 +162,6 @@ ul,h1,h2,h3,p {
     border: none;
 }
 /* ----------- особенности ------------ */
-.features .title {
-    display: none;
-}
 .features-list {
     display: flex;
     padding: 94px 0;
@@ -243,9 +255,6 @@ ul,h1,h2,h3,p {
     text-align: center;
     padding: 94px 0;
 }
-.portfolio .title {
-    display: none;
-}
 .center {
     display: inline-block;
 }
@@ -260,7 +269,9 @@ ul,h1,h2,h3,p {
     margin-right: 8px;
 }
 .portf-filter-btn {
-    font: 500 16px Roboto, sans-serif;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
     color: var(--color-main-text);
     line-height: 1.6;
     letter-spacing: 0.03em;
