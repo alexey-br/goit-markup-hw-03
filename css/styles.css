@@ -105,8 +105,7 @@ ul,h1,h2,h3,p {
 /* ------------- нижний колонтитул ------------- */
 .footer {
     background-color: var(--color-background);
-    min-height: 252px;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 .footer-address {
     margin-top: 20px;
@@ -162,9 +161,11 @@ ul,h1,h2,h3,p {
     border: none;
 }
 /* ----------- особенности ------------ */
+.features {
+    padding: 94px 0;
+}
 .features-list {
     display: flex;
-    padding: 94px 0;
 }
 .features-item {
     list-style-type: none;
@@ -188,6 +189,9 @@ ul,h1,h2,h3,p {
     color: var(--color-sec-text);
 }
 /* ----------- чем мы занимаемся ------- */
+.we-do {
+    padding-bottom: 94px;
+}
 .we-do-title,
 .team-title {
     margin-bottom: 50px;
@@ -200,7 +204,6 @@ ul,h1,h2,h3,p {
 }
 .we-do-list {
     display: flex;
-    padding-bottom: 94px;
     list-style-type: none;
 }
 .we-do-item:not(:last-child) {
